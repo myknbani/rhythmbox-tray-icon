@@ -179,7 +179,7 @@ class TrayIcon(GObject.Object, Peas.Activatable):
         total_stars = int(total_stars)
 
         starString = '★' * filled_stars + '☆' * (total_stars-filled_stars)
-        return "<span size='x-large' foreground='#000000'>" + starString + "</span>"
+        return "<span size='x-large' foreground='yellow'>" + starString + "</span>"
 
     def toggle_player_visibility(self, icon, event, data = None):
         """
